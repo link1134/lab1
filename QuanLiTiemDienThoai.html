@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Quản Lý Kho Hàng Điện Thoại</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .form-section,
+        .list-section {
+            width: 49%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #848282;
+            border-radius: 5px;
+        }
+
+        .form-section h2,
+        .list-section h2 {
+            margin-top: 0;
+        }
+
+        .form-section input,
+        .form-section button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-section {
+            margin-bottom: 20px;
+        }
+
+        .search-section input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .phone-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .phone-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .phone-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quản Lý Kho Hàng Điện Thoại</h1>
+    <div class="container">
+        <div class="form-section">
+            <h2>Thêm Điện Thoại Mới</h2>
+            <form>
+                <input type="text" placeholder="Tên Điện Thoại">
+                <input type="number" placeholder="Số Lượng">
+                <input type="text" placeholder="Hãng Điện Thoại">
+                <button type="submit">Thêm</button>
+            </form>
+        </div>
+
+        <div class="list-section">
+            <h2>Danh Sách Điện Thoại</h2>
+            <div class="search-section">
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+            <ul class="phone-list">
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
